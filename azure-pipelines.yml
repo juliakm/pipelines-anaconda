@@ -1,8 +1,8 @@
 jobs:
 - job:
-  displayName: ubuntu-16.04
+  displayName: ubuntu-18.04
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   strategy:
     matrix:
       Python27:
@@ -29,9 +29,9 @@ jobs:
     displayName: pytest
 
 - job:
-  displayName: macOS-10.13
+  displayName: macOS-10.15
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.15'
   strategy:
     matrix:
       Python27:
