@@ -2,7 +2,6 @@
 jobs:
 - deployment: 
   environment: ubuntu
-  pool:
   strategy:
    runOnce:
      deploy:
