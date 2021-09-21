@@ -1,12 +1,13 @@
-
-jobs:
-- deployment: 
-  environment: ubuntu
-  strategy:
-   runOnce:
-     deploy:
-       steps:
-         - script: echo Testing
+stages:
+- stage: Deploy
+  jobs:
+  - deployment: 
+    environment: ubuntu
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - script: echo Testing
   
 # - job:
 #   displayName: ubuntu-18.04
