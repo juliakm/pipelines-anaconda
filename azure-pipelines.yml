@@ -8,6 +8,7 @@ stages:
         deploy:
           steps:
             - script: echo Testing
+            - script: cat /etc/os-release 
   
 # - job:
 #   displayName: ubuntu-18.04
