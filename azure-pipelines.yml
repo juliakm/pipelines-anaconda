@@ -8,7 +8,12 @@ stages:
         deploy:
           steps:
             - script: echo Testing
-            - script: cat /etc/os-release 
+            - task: CopyFiles@2
+              inputs:
+                Contents: '**'
+                TargetFolder: '$(build.artifactstagingdirectory)'
+             
+
   
 # - job:
 #   displayName: ubuntu-18.04
